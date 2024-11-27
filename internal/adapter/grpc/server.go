@@ -31,7 +31,7 @@ func (s *GrpcAdapter) Run() {
 		log.Fatalf("failed to listen on port %v: %v", s.port, err)
 	}
 
-	log.Printf("failed to listen on port %v", s.port)
+	log.Printf("server is listening on port %v", s.port)
 
 	grpcServer := grpc.NewServer()
 	s.server = grpcServer
